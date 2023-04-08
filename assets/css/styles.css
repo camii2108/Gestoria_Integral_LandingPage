@@ -89,6 +89,10 @@ body{
   line-height: 1.6;
 }
 
+.btn-wsp {
+  background-color: #048654;
+}
+
 h1,h2,h3,p,ul{
   margin: 0;
 }
@@ -224,6 +228,8 @@ img{
 
 /* Scroll top */
 .scrolltop{
+  height: 2.8rem;
+  width: 2.8rem;
   position: fixed;
   right: 1rem;
   bottom: -20%;
@@ -231,8 +237,8 @@ img{
   justify-content: center;
   align-items: center;
   padding: .3rem;
-  background: rgba(6,156,84,.5);
-  border-radius: .4rem;
+  background: rgba(6,156,84);
+  border-radius: 100%;
   z-index: var(--z-tooltip);
   transition: .4s;
   visibility: hidden;
@@ -242,8 +248,8 @@ img{
   background-color: var(--first-color-alt);
 }
 
-.scrolltop__icon{
-  font-size: 1.8rem;
+.bxl-whatsapp{
+  font-size: 2.8rem;
   color: var(--body-color);
 }
 
