@@ -387,28 +387,6 @@ img{
   border-radius: .5rem 0 .5rem 0;
 }
 
-/*========== APP ==========*/
-.app__data{
-  text-align: center;
-}
-
-.app__description{
-  margin-bottom: var(--mb-5);
-}
-
-.app__stores{
-  margin-bottom: var(--mb-4);
-}
-
-.app__store{
-  width: 120px;
-  margin: 0 var(--mb-1);
-}
-
-.app__img{
-  width: 230px;
-  justify-self: center;
-}
 
 /*========== CONTACT ==========*/
 .contact__container{
@@ -469,8 +447,7 @@ img{
 /*========== MEDIA QUERIES ==========*/
 @media screen and (min-width: 576px){
   .home__container,
-  .about__container,
-  .app__container{
+  .about__container{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
   }
@@ -567,7 +544,18 @@ img{
 
 /* For tall screens on mobiles y desktop*/
 @media screen and (min-height: 721px) {
+
     .home__container {
         height: 640px;
+    }
+}
+@media screen and (min-height: 320px) {
+
+    .home__container {
+        height: 640px;
+    }
+
+    img{
+        width: 50%;
     }
 }

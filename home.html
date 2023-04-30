@@ -6,9 +6,13 @@
 
         <!--========== BOX ICONS ==========-->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+	
 
         <!--========== CSS ==========-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/style.css">
 
         <title>Gestoria Integral</title>
     </head>
@@ -171,11 +175,66 @@
             </section>
 
             <!--========== MENU ==========-->
+            <!-- CARROUSEL -->
             <section class="menu section bd-container" id="menu">
                 <span class="section-subtitle">Especial</span>
                 <h2 class="section-title">Nuestros Servicios Disponibles</h2>
 
-                <div class="menu__container bd-grid">
+                <div class="carousel">
+                    <div class="carousel__contenedor">
+                        <button aria-label="Anttenedoerior" class="carousel__anterior">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+        
+                        <div class="carousel__lista">
+                            <div class="carousel__elemento">
+                                <img src="assets/img/1_jpg.jpg" alt="">
+                                <h3 class="menu__name">Transferencia de vehículos</h3>
+                                <!-- <small style="color: #017A81; font-size: 25px" >¿Querés saber la situación <br> juridica de cualquier vehivulo?</small> -->
+                                <p style="font-size: 10px;"> Con este trámite nos encargamos  de cambiar titularidad de un vehículo de una persona a otra, <br> ya sea por compra-venta, donación, herencia, entre otros.</p>
+
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="assets/img/1_jpg.jpg" alt="Rock and Roll Hall of Fame">
+                                <h3 class="menu__name">Informe de Dominio</h3>
+                                <small style="color: #017A81; font-size: 25px">¿Querés saber la situación <br> juridica de cualquier vehivulo?</small>
+                                <p style="font-size: 10px;"> Brinda la situación juridica del automotor/motovehículos. Te permite saber si posee denuncia
+                                 de venta, prenda, ect. Evite ser estafado.</p>
+
+                            </div>
+
+                            
+                            <div class="carousel__elemento">
+                                <img src="assets/img/plate1.png" alt="Rock and Roll Hall of Fame">
+                                <p>Rock and Roll Hall of Fame</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="assets/img/plate1.png" alt="Rock and Roll Hall of Fame">
+                                <p>Rock and Roll Hall of Fame</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="assets/img/plate1.png" alt="Rock and Roll Hall of Fame">
+                                <p>Rock and Roll Hall of Fame</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="assets/img/plate1.png" alt="Rock and Roll Hall of Fame">
+                                <p>Rock and Roll Hall of Fame</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="img/3.png" alt="Constitution Square - Tower I">
+                                <p>Constitution Square - Tower I</p>
+                            </div>
+                        </div>
+        
+                        <button aria-label="Siguiente" class="carousel__siguiente">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+        
+                    <div role="tablist" class="carousel__indicadores"></div>
+                </div>
+
+               <!--  <div class="menu__container bd-grid">
                     <div class="menu__content">
                         <img src="assets/img/plate1.png" alt="" class="menu__img">
                         <h3 class="menu__name">Gestoria Automotor</h3>
@@ -208,26 +267,10 @@
                         <span class="menu__preci">$9.50</span>
                         <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
                     </div>
-                </div>
+                </div> -->
             </section>
 
-            <!--===== APP =======-->
-            <section class="app section bd-container">
-                <div class="app__container bd-grid">
-                    <div class="app__data">
-                        <span class="section-subtitle app__initial">App</span>
-                        <h2 class="section-title app__initial">App is aviable</h2>
-                        <p class="app__description">Find our application and download it, you can make reservations, food orders, see your deliveries on the way and much more.</p>
-                        <div class="app__stores">
-                            <a href="#"><img src="assets/img/app1.png" alt="" class="app__store"></a>
-                            <a href="#"><img src="assets/img/app2.png" alt="" class="app__store"></a>
-                        </div>
-                    </div>
-
-                    <img src="assets/img/movil-app.png" alt="" class="app__img">
-                </div>
-            </section>
-
+      
             <!--========== CONTACT US ==========-->
             <section class="contact section bd-container" id="contact">
                 <div class="contact__container bd-grid">
@@ -296,5 +339,8 @@
 
         <!--========== MAIN JS ==========-->
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/carrousel.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     </body>
 </html>
